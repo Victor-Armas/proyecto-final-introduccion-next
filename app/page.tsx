@@ -1,7 +1,6 @@
 import Card from "@/components/Card";
 import Header from "@/components/Header";
 import TypingEffect from "@/components/TypingEffect";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -9,7 +8,7 @@ export default function Home() {
       <Header/>
       <div className="relative flex items-center justify-center min-h-screen">
         {/* Imagen de fondo */}
-        <Image
+        <img
           src="/Fondo.webp"
           alt="Fondo de Introducción a la Ingeniería"
           className="absolute inset-0 w-full h-full object-cover -z-10"
@@ -43,11 +42,11 @@ export default function Home() {
         {/* Sección del desarrollador */}
         <div className="flex flex-col md:flex-row py-10 items-center md:items-stretch bg-white">
           {/* Contenedor de la Imagen */}
-          <div className="w-full md:w-1/2 max-h-60 flex justify-center mb-6 md:mb-0">
-            <Image
-              src="/Foto.png"
+          <div className="w-full md:w-1/2 max-h-60 flex justify-center mb-6 md:mb-0 ">
+            <img
+              src="/Foto.webp"
               alt="Foto del Desarrollador"
-              className="object-cover rounded-lg shadow-lg"
+              className="object-cover rounded-lg shadow-lg w-[30%]"
             />
           </div>
 
@@ -66,7 +65,7 @@ export default function Home() {
                 de Nueva Extremadura (UVNE)
               </li>
               <li>
-                <span className="font-semibold">Materia:</span> Introducción a
+                <span className="font-semibold">Asignatura:</span> Introducción a
                 la Ingeniería
               </li>
             </ul>
